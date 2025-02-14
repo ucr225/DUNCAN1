@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #2c3e50; /* Fondo oscuro */
+  color: #ecf0f1; /* Texto claro */
+}
+
+/* Estilos generales para el logo (animación y tamaño base) */
+.logo {
+  width: 50px; /* Ejemplo de tamaño base */
+  height: auto;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear; /* Aplica la animación solo si el usuario no ha pedido reducir el movimiento */
+  }
+}
+
+@media (min-width: 640px) {
+  .mobile {
+    width: 500px;
+    height: 500px;
+  }
+  .code {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .code {
+    flex-direction: row;
+  }
+  .content {
+    width: 40%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .card {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .center {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .icono {
+    width: 1.5rem;
+  }
+  .desktop {
+    width: 500px;
+    height: 400px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/duncanSer.png");
+  }
+  .mobile {
+    display: none;
+  }
+  .contentImg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    width: 60%;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.footer, .header {
+  background-color: #ffb703;
+  color: #000000;
+  padding: 10px;
+  width: 100%;
+}
+
+.header button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #444;
+}
+
+
+div {
+  border: 1px solid #ccc; /* Bordes para el "box" */
+  padding: 10px; /* Espacio interno */
+  margin-bottom: 10px; /* Espacio entre los "boxes" */
+  display: flex;
+  flex-direction: column; /* Alinea verticalmente */
+  align-items: center; /* Centra horizontalmente */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Espacio entre label e input */
+  text-align: center; /* Centra el texto del label */
+}
+
+input {
+  width: 100%; /* Opcional: Para que el input ocupe todo el ancho del "box" */
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+
+.icono {
+  pointer-events: none;
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  height: 18px;
+  width: 18px;
+  transform: translateY(-50%);
+  color: #a0aec0;
+}
+
+/* Estilos para el botón toggle */
+.toggle-button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.toggle-button i {
+  pointer-events: none;
+}
